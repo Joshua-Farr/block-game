@@ -1,3 +1,8 @@
+import { Wrapper } from "./components/Wrapper";
+
+import "./App.css";
+import { generateGrid } from "./utils/generateGrid";
+
 export const App = () => {
-  return <h1>Hello World</h1>;
+  return <Wrapper>{generateGrid(20)}</Wrapper>;
 };
